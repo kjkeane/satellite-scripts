@@ -17,7 +17,7 @@ Prerequisites
 * Organization Name
 * Python
 * `python-requests <https://github.com/requests/requests>`_
-* `python-requests-oauthlib <https://github.com/requests/requests-oauthlib`
+* `python-requests-oauthlib <https://github.com/requests/requests-oauthlib>`_
 
 Usage
 -----
