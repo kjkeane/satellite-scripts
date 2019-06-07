@@ -16,8 +16,8 @@ Prerequisites
 * Login user to Satellite
 * Organization Name
 * Python
-* [python-requests](https://github.com/requests/requests)
-* [python-requests-oauthlib](https://github.com/requests/requests-oauthlib)
+* `python-requests <https://github.com/requests/requests>`_
+* `python-requests-oauthlib <https://github.com/requests/requests-oauthlib`_
 
 Usage
 -----
@@ -28,3 +28,25 @@ python cv-publish.py
 Known Issues
 ------------
 * All CCVs are published everytime the script is ran, even if they are not changed.  This can be improved by only publishing and promoting CCVs where any of the components have actually changed.
+
+host-report.py
+--------------
+This script will pull all Content Hosts, format it into HTML and email it out.
+
+Prerequisites
+-------------
+* Login use to Satellite
+* Organization Name
+* Python
+* `python-requests <https://github.com/requests/requests>`_
+* `python-requests-oauthlib <https://github.com/requests/requests-oauthlib`_
+
+Usage
+-----
+```
+python host-report.py
+```
+
+Known Issues
+------------
+* Currently does not support multiple `to_addresses`.  This can be improved by looping through the list provided.
